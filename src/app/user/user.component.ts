@@ -17,6 +17,19 @@ export class UserComponent {
   onSelectUser() {}
 }
 
+// using signals to accept values, import (input) which is a special function not the @Input
+// export class UserComponent {
+
+// the values are read only
+// avatar = input.required<>()=> no need for required value
+// name = input.required<string>()
+//  avatar = input() -< you can pass an initial value or not but you tell typescript the value to be undefined or set the value to bereceived
+//    imagePath = computed({
+//     return './assets/users/' + this.avatar();
+//   })
+//   onSelectUser() {}
+// }
+
 // whie using signals
 // export class UserComponent {
 //   selectedUser = signal(DUMMY_USERS[randomIndex]);
